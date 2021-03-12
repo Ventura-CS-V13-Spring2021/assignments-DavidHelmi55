@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 	char c;
-	//   int i =65;
+
 	c = 65;
 	while (c < 91)
 	{
@@ -13,18 +13,4 @@ int main()
 			cout << " " << endl;
 		c++;
 	}
-//   while (c < 91)
-//   {
-//       if (c % 5 == 4)
-//       {
-//           cout << c << " " << endl;
-//       }
-//       else
-//       {
-//           cout << static_cast<char>(i)<< " ";
-//       }
-        
-//       i++;
-        
-//   }
 }
