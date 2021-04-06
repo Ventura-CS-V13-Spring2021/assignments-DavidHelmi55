@@ -14,7 +14,7 @@ int second()
   ofstream file("data.txt");
     
   file>>num;
-  while(!file.eof())
+  while(file>>num)
   {
     count++;
     sum=sum+num;
