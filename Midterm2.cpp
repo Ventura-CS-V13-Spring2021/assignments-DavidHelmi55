@@ -9,7 +9,7 @@ int main()
   ofstream file("numbers.txt");
     
   srand((unsigned) time(0));
-  int getRdnumr;
+  int getRdnum;
   for (int index = 0; index < 10; index++) 
   {
     getRdnum = (rand() % 50) + 1;
