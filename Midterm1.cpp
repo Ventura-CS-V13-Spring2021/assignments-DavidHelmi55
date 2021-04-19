@@ -7,13 +7,16 @@ int main()
 {
   ifstream file("students.txt");
 
-  char name;
+  string name;
+  int score1;
+  int score2;
   int sum;
-  float avg;
-
+  int avg;
   
-  
-  cout << "Student name"
 
+  while (file >> name >> score1 >> score2)
+  {
+    cout << "Student name:" << name << " Score 1:"<< score1 << " Score 2:" << score2 << "\n";
+  }
 
 }
