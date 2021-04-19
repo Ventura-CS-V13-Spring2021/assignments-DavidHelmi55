@@ -21,4 +21,8 @@ int main()
     cout << "Student name:" << name << " Score 1:"<< score1 << " Score 2:" << score2 << "\n";
   }
 
+  if (avg > 80)
+  {
+    cout << name << endl;
+  }
 }
