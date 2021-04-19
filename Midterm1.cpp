@@ -13,6 +13,8 @@ int main()
   int sum;
   int avg;
   
+  sum = score1 + score2;
+  avg = sum/2;
 
   while (file >> name >> score1 >> score2)
   {
