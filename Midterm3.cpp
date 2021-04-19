@@ -11,10 +11,11 @@ int main()
   int num1;
   int num2;
   int num3;
+  int difference;
     
-  num1 = (rand()%(1-9))+1;
-  num2 = (rand()%(1-9))+1;
-  num3 = (rand()%(1-9))+1;
+  num1 = rand() % 10;
+  num2 = rand() % 10;
+  num3 = rand() % 10;
   
   if (num1 > num2)
   {
