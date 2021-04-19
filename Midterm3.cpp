@@ -12,13 +12,8 @@ int main()
   int num2;
   int num3;
     
-  srand((unsigned) time(0));
-  int getRdnum;
-  for (int index = 0; index < 3; index++) 
-  {
-    getRdnum = (rand() % 9) + 1;
-    cout << getRdnum << endl;
-  }
-  
+  num1 = (rand()%(1-9))+1;
+  num2 = (rand()%(1-9))+1;
+  num3 = (rand()%(1-9))+1;
   
 }
