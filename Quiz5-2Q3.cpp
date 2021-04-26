@@ -26,7 +26,7 @@ void printbinary(int num[], int size)
 }
 void count0cluster(int bin[], int size)
 {
-  int count = 0;
+  int count;
   if (bin[0] == 0)
         count++;
 
