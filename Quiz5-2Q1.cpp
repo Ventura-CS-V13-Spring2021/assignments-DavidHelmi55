@@ -11,9 +11,14 @@ int main()
   for (int i=0; i<10; i++)
     cout << numbers[i] << "\t";
   cout << endl;
-
+    
   for (int i=0; i<SIZE; i++){
     sum += numbers[i];
   }
-  cout << "Sum : " << sum << endl;
+  cout << endl;
+    
+  for (int i=0; i<SIZE; i++){
+    diff[i] = sum - numbers[i];
+    cout << diff[i] << "\t";
+  }
 }
