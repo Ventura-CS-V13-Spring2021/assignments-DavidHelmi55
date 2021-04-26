@@ -1,4 +1,5 @@
 #include    <iostream>
+#include    <iomanip>
 #include    <cstdlib>
 #include    <ctime>
 using namespace std;
@@ -33,14 +34,11 @@ void printarray(int num[], int size)
 void findmatchnum(int num1[], int size1, int num2[], int size2)
 {
     int match;
-    int i;
-    for(i=0; i<10; i++){
-        for(i=0; i<5; i++){
-            if(num1[i]==num2[i]){
+    for(int i=0; i<10; i++){
+            if(num1[i] == num2[i]){
                 match++;
             }
         }
         cout << "The number of matched elements "  << match << endl;
-    }
 }
 
