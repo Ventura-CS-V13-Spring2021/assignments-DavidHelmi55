@@ -4,44 +4,81 @@
 #include<ctime>
 using namespace std;
 
-int main() 
+int getRdnum()
+{
+  return rand()%10;
+}
+
+
+int findMin(int num1, int num2, int num3)
+{
+  if(num1<=num2 && num1<=num3)
+  {
+    return num1;
+  }
+  if(num2<=num1 && num2<=num3)
+  {
+    return num2;
+  }
+  return num3;
+}
+
+
+int findMax(int num1, int num2, int num3)
+{
+  if(num1>=num2 && num1>=num3)
+  {
+    return num1;
+  }
+  if(num2>=num1 && num2>=num3)
+  {
+    return num2;
+  }
+  return num3;
+}
+
+
+int getDifference(int num1, int num2, int num3)
+{
+  return findMax(num1, num2, num3)-findMin(num1, num2, num3);
+}
+
+
+void fileWrite(int difference)
+{
+  ofstream file("question3.txt",ios::app);
+  file<<difference<<endl;
+  file.close();
+}
+
+int main()
 {
   ofstream file("question3.txt");
-  
-  int num1;
-  int num2;
-  int num3;
-  int difference;
+  file.close();
     
-  num1 = rand() % 10;
-  num2 = rand() % 10;
-  num3 = rand() % 10;
-  
-  if (num1 > num2)
+  srand(time(NULL));
+  int num1;
+  int num2; 
+  int num3;
+  int min;
+  int max;
+  int diff=0;
+    
+  while(diff>=3);
   {
-    if (num1 > num3)
-      cout << "num1 is the largest, " << num1 << endl;
-    else
-      cout << "num2 is the largest, " << num2 << endl;
-  }
-    else{
-        if (num2 > num3)
-          cout << "num2 is the largest, " << num2 << endl;
-    else
-          cout << "num3 is the largest, " << num3 << endl;
-    }
-     
-  if (num1 < num2 && num1 < num3)
-  {
-    cout << "num1 is the smallest, " << num1 << endl;
-  }
-  else if (num2 < num1 && num2 < num3)
-  {
-    cout << "num2 is the smallest, " << num1 << endl;
-  }
-  else
-  {
-    cout << "num3 is the smallest, " << num1 << endl;
+    num1=getRdnum();
+    num2=getRdnum();
+    num3=getRdnum();
+        
+    min=findMin(num1, num2, num3);
+    max=findMax(num1, num2, num3);
+    diff=getDifference(num1, num2, num3);
+                
+    cout<<"All: "<<num1<<", "<<num2<<", "<<num3<<endl;
+    cout<<"Min: "<<min<<", Max: "<<max<<endl;
+    cout<<"Difference between min and max: "<<diff<<endl;
+                
+    fileWrite(diff);    
   }
   return 0;
 }
