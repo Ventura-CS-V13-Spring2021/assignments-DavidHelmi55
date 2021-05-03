@@ -18,6 +18,7 @@ int getRdnum()
 
 int isGreater(int n)
 {
+  int prevNum = 51;
   if(n > prevNum)
   return 1; 
   else

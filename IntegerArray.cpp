@@ -1,31 +1,48 @@
 int IntegerArray::getLength(void) const
 {
-    // return length;
+  return length;
 }
 int IntegerArray::getLastelm(void) const
 {
-    // return the value of the last element;
+  return int i = a[a.size() - 1];;
 }
 void IntegerArray::printAll(void) const
 {
-    // Print all elements
+  cout << array[i] << endl;
 }
 void IntegerArray::fillUp(void)
 {
-    // Make up the array with the random integer values(0 to 100)
-    // The array numbers has the maximum capacity with N.
-    // Set N to the length.
+  { 
+    int N;
+    int array[N];
+    for(int i=0;i<N;i++)
+      array[i]=rand()%101;
+    N = length;    
+  }
 }
 void IntegerArray::sortAsc()
 {
-    // Sort the array values with ascending order
+  int temp;
+  for(i=0; i<N; i++)
+  {
+    for(j=i+1; j<N; j++)
+      {
+        if(array[j] < array[i])
+          {
+            temp = array[i];
+            array[i] = array[j];
+            arr[j] = temp;
+          }
+      }
+  }
 }
 void IntegerArray::removeLastelm(void)
 {
-    // Decrease 1 from the length
+  length = length - 1
 }
 void IntegerArray::appendElement(int v)
 {
-    // Append the value v to the array
-    // length += 1;
+  v = rand()%101;
+  array[100] = v
+  length += 1;
 }

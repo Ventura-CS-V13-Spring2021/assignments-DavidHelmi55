@@ -1,0 +1,3 @@
+I could not finish the whole midterm in the given time because there were some things I didnt understand or was confused about,
+for question 2 I didnt know how to get the difference of the previous number. For question 3 I didnt know how to get the difference 
+of the randomly generated numbers. It was my fault I didnt complete it under the time because I didnt how to do these type of codes.
