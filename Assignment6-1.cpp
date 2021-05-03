@@ -23,3 +23,5 @@ int main()
   cout << "Current length is " << N.getLength() << endl;
   N.printAll();
 }
+
+// I am really confused on everything here. It looked like I just needed to copy and paste what was on the assignment.

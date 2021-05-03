@@ -46,3 +46,5 @@ void IntegerArray::appendElement(int v)
   array[100] = v
   length += 1;
 }
+
+//For this part I just coded what the comments were telling me to do. I have a feeling I did this incorrectly.
