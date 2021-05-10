@@ -16,3 +16,19 @@ int Coordinate::getX() const
 {
   return x;
 }
+
+int Coordinate::getY() const 
+{
+  return y;
+}
+
+void Coorinate::setXY(double xval, double yval)
+{
+  x = yval;
+  y = yval;
+}
+
+void Coordinate::printXY() const
+{
+  cout << "(" << X << "," << Y << ")" <<endl;
+}
