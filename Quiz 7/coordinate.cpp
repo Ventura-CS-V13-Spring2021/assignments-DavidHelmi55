@@ -22,7 +22,7 @@ int Coordinate::getY() const
   return y;
 }
 
-void Coorinate::setXY(double xval, double yval)
+void Coordinate::setXY(double xval, double yval)
 {
   x = yval;
   y = yval;
