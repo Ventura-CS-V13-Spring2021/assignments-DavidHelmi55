@@ -44,3 +44,11 @@ void Rectangle::setLBRT(Coordinate lbval, Coordinate rtval)
   double c_y = (rt.getY() + lb.getY())/2;
   center.setXY(c_x,c_y);
 }
+
+void Rectangle::printRectangle() const
+{
+  cout << "Bottom left point: " << lb.printXY(); << endl;
+  cout << "Top right point: " << rt.printXY(); << endl;
+  cout << "Center point: " << center.printXY(); << endl;
+  cout << "Area: " << area << endl;
+}
