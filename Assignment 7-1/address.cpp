@@ -51,7 +51,6 @@ void Address::setZip(int z)
 {
   zip = z;
 }
-
 void Address::setAddress(string addr,string st,int z)
 {
   street = addr;
