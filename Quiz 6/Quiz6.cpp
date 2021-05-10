@@ -1,25 +1,20 @@
 #include <iostream>
+#include <stdlib.h>
 #include "IntegerArray.hpp"
 
 using namespace std;
-
-int main()
+int main() 
 {
   IntegerArray N;
-
   N.fillUp();
   N.printAll();
-  cout << "Current length is " << N.getLength() << endl;
-
-  cout << "After sorting with ascending order : \n ";
+  cout<<"Current length is: "<<N.getLength()<<endl;
+  cout<<"After sorting in ascending order: "<<endl;
   N.sortArray(0);
   N.printAll();
-
-  cout << "After sorting with descending order: \n ";
+  cout<<"After sorting in descending order: "<<endl;
   N.sortArray(1);
   N.printAll();
-
-  cout << "The number of prime numbers " << N.getPrimenumbers() << endl;
+  cout<<"Total Prime Numbers: "<<N.getPrimenumbers()<<endl;
+  return 0;
 }
-
-//For this part of the code I just copied what was there for me on the quiz page.
