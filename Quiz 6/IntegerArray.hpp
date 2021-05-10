@@ -6,7 +6,6 @@ class IntegerArray
 {
   private:
     vector<int> arr;
-
   public:
     void fillUp();
     void fillUp(int);

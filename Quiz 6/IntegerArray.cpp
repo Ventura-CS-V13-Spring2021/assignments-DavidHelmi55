@@ -91,5 +91,5 @@ void IntegerArray::printAll()
   {
     cout<<arr[i]<<" ";
   }
-cout<<endl;
+  cout<<endl;
 }

@@ -21,7 +21,8 @@ void IntegerArray::printAll()
   if(length==0)
   {
     cout<<"No Element in the array!"<<endl;
-  }else
+  }
+  else
   {
     cout<<"Elements in the array: "<<endl;
   for(int i=0;i<length;i++)

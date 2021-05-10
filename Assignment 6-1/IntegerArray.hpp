@@ -7,7 +7,6 @@ class IntegerArray
     static const int N = 10;
     int numbers[N];
     int length = 0;
-  
   public:
     int getLength();
     int getLastelm();
