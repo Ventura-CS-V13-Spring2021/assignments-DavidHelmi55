@@ -17,29 +17,36 @@ int main()
   return 0;
 }
 
-void makearray(int n[], int N){
-    for(int i=0;i<N;i++){
-        n[i]=rand() % 100; 
-    }
+void makearray(int n[], int N)
+{
+  for(int i=0;i<N;i++)
+  {
+    n[i]=rand() % 100; 
+  }
 }
-void printarray(int n[], int N){
-    
-    cout<<"Array generated is :\n";
-    for(int i=0;i<N;i++){
-        cout<<n[i]<<"\n";
-    }
+void printarray(int n[], int N)
+{
+  cout<<"Array generated is :\n";
+  for(int i=0;i<N;i++)
+  {
+    cout<<n[i]<<"\n";
+  }
 }
-void findminmax(int n[], int N){
-    int min=n[0];
-    int max=n[0];
-    for(int i=0;i<N;i++){
-        if(n[i]<min){
-            min=n[i];
-        }
-        if(n[i]>max){
-            max=n[i];
-        }
+void findminmax(int n[], int N)
+{
+  int min=n[0];
+  int max=n[0];
+  for(int i=0;i<N;i++)
+  {
+    if(n[i]<min)
+    {
+      min=n[i];
     }
-    cout<<"\n Minimum value is " << min;
-    cout<<"\n Maximum value is " << max;
+    if(n[i]>max)
+    {
+      max=n[i];
+    }
+  }
+  cout<<"\n Minimum value is " << min;
+  cout<<"\n Maximum value is " << max;
 }
