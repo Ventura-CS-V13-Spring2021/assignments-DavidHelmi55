@@ -1,5 +1,5 @@
 #pragma once
-#include <stdlib.h>
+#include <bits/stdc++.h>
 using namespace std;  
 
 class IntegerArray 

@@ -1,5 +1,5 @@
 #include "IntegerArray.hpp"
-#include <stdlib.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 void IntegerArray::fillUp() 

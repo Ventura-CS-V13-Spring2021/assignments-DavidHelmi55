@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stdlib.h>
+#include <bits/stdc++.h>
 #include "IntegerArray.hpp"
 
 
