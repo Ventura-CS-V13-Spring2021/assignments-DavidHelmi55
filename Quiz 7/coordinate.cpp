@@ -1,18 +1,18 @@
 #include <iostream>
-#include "coordinate.hpp"
 using namespace std;
+#include "coordinate.hpp"
 
-Coordinate::Coordinate()
+Coordinate::Coordinate() 
 {
   setXY(0,0);
 }
 
-Coordinate::Coordinate(double xval, double yval)
+Coordinate::Coordinate(double xval, double yval) 
 {
   setXY(xval, yval);
 }
 
-int Coordinate::getX() const
+int Coordinate::getX() const 
 {
   return x;
 }
@@ -22,13 +22,13 @@ int Coordinate::getY() const
   return y;
 }
 
-void Coordinate::setXY(double xval, double yval)
+void Coordinate::setXY(double xval, double yval) 
 {
-  x = yval;
+  x = xval;
   y = yval;
 }
 
 void Coordinate::printXY() const
 {
-  cout << "(" << X << "," << Y << ")" <<endl;
+  cout << "(" << x << "," << y << ")";
 }

@@ -1,13 +1,13 @@
 #ifndef COORDINATE_H
 #define COORDINATE_H
 
-class Coordinate
+class Coordinate 
 {
-private:
+  private:
     double x;
     double y;
 
-public:
+  public:
     Coordinate();
     Coordinate(double xval, double yval);
     int getX() const;

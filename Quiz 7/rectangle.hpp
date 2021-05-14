@@ -2,15 +2,15 @@
 #define RECTANGLE_H
 #include "coordinate.hpp"
 
-class Rectangle
+class Rectangle 
 {
-private:
+  private:
     Coordinate lb;
     Coordinate rt;
     Coordinate center;
     double area;
-
-public:
+    
+  public:
     Rectangle();
     Rectangle(Coordinate lbval, Coordinate rtval);
     Coordinate getLB() const;
