@@ -63,3 +63,49 @@ class Student
       cout<<class_List[i]<<"\n";
     }
   }
+
+  void Delete()
+  {
+    num_classes= 0;
+    delete[] class_List;
+    class_List=NULL;
+  }
+
+  operator vector<string> ()
+  {
+    vector<string> v(num_classes);
+        
+    for(int i=0;i<num_classes;++i)
+    {
+      v[i]=class_List[i];
+    }
+    return v;
+  }
+
+  ~Student()
+  {
+    cout<<"Destructor called\n";
+  }
+};
+
+int main()
+{
+  Student stu1;
+  stu1.get_input();
+  stu1.Print();
+
+  vector<string> List1 = stu1; 
+  cout<<"Printing Copied List:\n";
+    
+  for(int i=0;i<List1.size();++i)
+  {
+    cout<<List1[i]<<"\n";
+  }
+    
+  Student stu3("student3",1);
+  stu3.Print();
+  Student stu2(stu1);
+  stu2.Delete();
+  stu2.Print();
+  return 0;
+}
